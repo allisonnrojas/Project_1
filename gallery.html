@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>http://www.thepub.com/gallery</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/author.css">
+		<style>
+		@import url(_fonts/icomoon/style.css);
+
+		#gallery {
+			padding: 25px;
+			text-align: center;
+		}
+
+		#gallery div {
+			display: inline-block;
+			width: 250px;
+			height: 150px;
+			overflow: hidden;
+
+			position: relative;
+		}
+
+		#gallery div img {
+			width: 250px;
+			height:150px;
+			padding:5px;
+
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+
+			margin: auto;
+		}
+
+		#dark {
+			display: none;
+			position: fixed;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			background-color: rgba(0,0,0,.7);
+		}
+		.light {
+			background-color: black;
+			min-width:300px;
+			height: 281px;
+			padding: 10px;
+
+			position: fixed;
+			left: 0px; right: 0px; top: 0px; bottom: 0px;
+			margin: auto;
+		}
+		.light a.close {
+			position: absolute;
+			right: 1px;
+			top: -12px;
+
+			background-color: black;
+			display: block;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			text-decoration: none;
+			font-size: 20px;
+			color: white;
+			font-weight: bold;
+		}
+		.light img {
+			width: 100%;
+			height: auto;
+		}
+
+		.light .icon {
+			font-size: 200px;
+			color: #fff;
+			
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+			height: 200px;
+
+			z-index: 11;
+			opacity: 1;
+			transition: all .1s;
+		}
+		.light:hover .icon { opacity: .1; }
+		.light .icon:hover { opacity: .4; }
+		.light .icon-arrow-left { left: -35px; }
+		.light .icon-arrow-right { right: -35px; }
+
+		#galleryLogo {
+			max-width:800px;
+			height:30px;
+			border:solid 1px red;
+			margin:auto;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="inset">
+					<div id="logoContainer"><img src="img/logo.png"></div>
+				</div>
+			</header>
+			<nav id="footermenu">
+					<a href="index.html">Home</a>
+					<a href="food.html">Food</a>
+					<a href="drinks.html">Drinks</a>
+					<a href="events.html">Events</a>
+			</nav>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-md-8 col-lg-12">
+						<div id="galleryLogo">
+						hello
+						</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-md-8 col-lg-12">
+						<div id="gallery">
+							<div><img class="img-responsive"src="img/gallery/gal1.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal2.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal3.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal4.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal5.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal6.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal7.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal8.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal9.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal10.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal11.jpg"></div>
+							<div><img class="img-responsive"src="img/gallery/gal12.jpg"></div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-md-8 col-lg-12">
+						<div id="dark">
+							<dark class="light">
+								<a href="#" class="close icon-cross"></a>
+								<div class="icon icon-arrow-left"></div>
+								<img src="img/">
+								<div class="icon icon-arrow-right"></div>
+							</dark>
+						</div>
+					</dark>
+				</div>
+			<footer>
+			<div class="col-sm-6 col-md-8 col-lg-12">
+				<nav id="footermenu">
+					<a href="index.html">Home</a>
+					<a href="food.html">Food</a>
+					<a href="drinks.html">Drinks</a>
+					<a href="events.html">Events</a>
+				</nav>
+				<div id="socialContainer">
+					<a href="http://www.facebook.com/YOURFACEBOOKPAGE"><img class="sButtons" style="border: 0pt none ;" title="Become a friend" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/FACEBOOKBUTTONgrey_zps1cd309d6.png" width="25" height="25" /></a>
+						
+					<a href="http://www.twitter.com"><img class="sButtons" style="border: 0pt none ;" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/TWITTERBUTTONgrey_zps48ffe683.png" width="25" height="25" /></a>
+						
+					<a href="YOUR GOOGLE+ URL"><img class="sButtons" style="border: 0pt none ;" title="Become a friend" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/GOOGLEgrey_zps04dda09a.png" width="25" height="25" /></a>
+				</div>
+				<p>&copy; THEPUB.COM 2013-2014. <span>|</span> ALL RIGHTS RESERVED. THEPUB.COM</p>
+			</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="js/author.js"></script>
+	</body>
+</html>
