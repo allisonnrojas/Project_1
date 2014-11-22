@@ -1,18 +1,22 @@
 body { background-color: black }
 #wrapper  { background-color: black; }
-
-#section1 { background-color: black; }
+#section1 { background-color: black;
+			margin-top: 50px; }
 #section2 { background-color: black; }
 #section3 { background-color: black; }
 #section4 { background-color: black; }
 
 /* headers, paragraphs, addy */
 
+
+h1 {text-align: center;}
+
 h1 a { 
 	color:#c45a32;
-	font-family: arial;
-	font-size: 18px;
-	margin-left:15px;
+	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+	font-size: 20px;
+	margin:auto;
+	margin-bottom: 50px;	
 }
 h1 a:hover { 
 	color:#8b3f23;
@@ -20,16 +24,17 @@ h1 a:hover {
 }
 h2 { 
 	width:100%;
-	height:30px;
+	height:40px;
+	text-align: center;
 	color:#a59c62;
 	font-size: 25px;
-	font-family: Palatino Linotype,
-	Book Antiqua, Palatino, serif; 
-	margin-left: 5px;
+	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+	margin:auto;
+	margin-bottom: 20px;
 }
 p {
 	color:#999a98;
-	font-family: arial;
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
 	font-size: 17px;
 	margin-top:20px;
 	margin-bottom: 50px; }
@@ -39,10 +44,13 @@ p a:hover {
 	color: #8b3f23;
 	text-decoration: none; 
 }	
-.divider { text-align: center;
-		   width:1000px;
-		   height:auto;
+.divider img { 
+	text-align: center;
+	width:100%;
+	margin:auto;
+
 }
+
 
 /* --- Glyph Icons --- */
 .glyphicon {
@@ -58,7 +66,7 @@ p a:hover {
 
 }
 #carousel-example-generic { 
-	max-width: 100%; margin:auto;
+	width: 100%; margin:auto;
 }
 
 
@@ -69,17 +77,17 @@ nav { 		padding: 10px; background: black; }
 section { 	
 			max-width:1000px; 
 			margin:auto;
-			padding-bottom:20px;
+			padding-bottom:60px;	
 }
-footer { 	height: 200px; background: black; }
+footer { 	height: 200px; margin-top: 40px; }
 
 /*logo*/
 #logoContainer { 
-	width:155px;
+	width:165px;
 	height:130px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 15px;
+	text-align: center;
+	margin:auto;
+	margin-top: 40px;
 }
 #logoContainer img { 
 	width:165px;
@@ -90,16 +98,16 @@ footer { 	height: 200px; background: black; }
 nav#footermenu { text-align: center; }
 nav#footermenu a { 
 	display: inline-block;
-	width: 60px;
-	margin-bottom: 5px;
-	height: 30px;
-	line-height: 25px;
+	width: 65px;
+	height: 10px;
+	line-height: 10px;
+	margin-top: 30px;
 	text-decoration: none;
+	text-transform: uppercase;
 	background-color:black ;
 	color: #d7d6ae;
-	font-size: 13px;
-	font-family: Palatino Linotype, 
-	Book Antiqua, Palatino, serif;
+	font-size: 14px;
+	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 }
 nav#footermenu a:hover { 
 	color: #9f965c;
@@ -115,17 +123,18 @@ span {
 	padding:0px;
 	display: inline-block;
 	width:10px;
-	height:32px; 
+	height:40px; 
 }
 #socialContainer {
-	width:130px;
+	width:123px;
 	height:35px;
 	padding:5px;
-	margin-left: auto;
-	margin-right: auto;
+	margin:auto;
+	text-align: center;
 }
 .sButtons {
 	margin:5px;
+
 }
 footer p { 
 	text-align: center;
@@ -134,7 +143,8 @@ footer p {
 	font-size: 10px;
 	margin-top: 15px;
 	background-color: black;
-	line-height: 30px
+	line-height: 30px;
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif
 }
 #overlay { ; background-color: black; padding: 1px; }
 
@@ -166,29 +176,12 @@ footer p {
 	margin:auto;
 	height:300px;
 }
-.contact { color:grey;
-		   font-size: 15px;
+.contact { 
+	color:grey;
+	font-size: 15px;
 }
 
 hr { width:80%; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

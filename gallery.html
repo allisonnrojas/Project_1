@@ -101,6 +101,40 @@
 			margin:auto;
 		}
 
+		/* ---gallery transition---- */
+
+		.svg-wrapper {
+		  margin: auto;
+		  height:65px;
+		  width: 330px; 
+		  margin-top: 20px;
+		  margin-bottom: 20px;
+		}
+		.shape {
+		  stroke-dasharray: 140 540;
+		  stroke-dashoffset: -470;
+		  stroke-width: 3px;
+		  fill: transparent;
+		  stroke: white;
+		  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+		}
+		.text {
+		  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+		  font-size: 22px;
+		  line-height: 32px;
+		  letter-spacing: 8px;
+		  color: #d7d6ae;
+		  top: -48px;
+		  text-align: center;
+		  position: relative;
+		 
+		}
+		.svg-wrapper:hover .shape {
+		  stroke-width: 2px;
+		  stroke-dashoffset: 0;
+		  stroke-dasharray: 760;
+		}
+
 		</style>
 	</head>
 	<body>
@@ -110,20 +144,22 @@
 					<div id="logoContainer"><img src="img/logo.png"></div>
 				</div>
 			</header>
-			<nav id="footermenu">
-					<a href="index.html">Home</a>
-					<a href="food.html">Food</a>
-					<a href="drinks.html">Drinks</a>
-					<a href="events.html">Events</a>
-			</nav>
 
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-6 col-md-8 col-lg-12">
-						<div id="galleryLogo">
-						hello
-						</div>
-
+			<div class="col-sm-6 col-md-8 col-lg-12">
+				<nav id="footermenu">
+					<a href="index.html">home</a>
+					<a href="food.html">food</a>
+					<a href="drinks.html">drinks</a>
+					<a href="events.html">events</a>
+				</nav>	
+				
+				<div class="svg-wrapper">
+					<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+						<rect class="shape" height="60" width="320" />
+						   <div class="text">GALLERY</div>
+				    </svg>
+				</div>
+			<hr>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-6 col-md-8 col-lg-12">
@@ -158,13 +194,6 @@
 					</dark>
 				</div>
 			<footer>
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<nav id="footermenu">
-					<a href="index.html">Home</a>
-					<a href="food.html">Food</a>
-					<a href="drinks.html">Drinks</a>
-					<a href="events.html">Events</a>
-				</nav>
 				<div id="socialContainer">
 					<a href="http://www.facebook.com/YOURFACEBOOKPAGE"><img class="sButtons" style="border: 0pt none ;" title="Become a friend" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/FACEBOOKBUTTONgrey_zps1cd309d6.png" width="25" height="25" /></a>
 						
