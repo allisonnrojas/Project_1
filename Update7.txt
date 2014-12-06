@@ -1,0 +1,13 @@
+﻿Allison Rojas
+PhoneGap
+
+
+
+
+1. Event List - plugin to show a list of events with date, time, description, place, etc. on a site by using a shortcode or a widget. I would use this plugin to show any upcoming gatherings. My concept is an app that gives you access to the most popular nightlife venues and events around you. 
+
+
+1. Social Sharing - Lets users share web contents on various social networks that will ultimately increase visitors to your site. I would use this plugin for others to post their own pictures and be able to share it on any social site that will build up the popularity  quicker and more efficiently.
+
+
+1. Geofencing - The way to create and monitor virtual areas for a real world geographic area. It can be used to set an alarm if someone enters or exits a monitored region or dwell within for a certain time. It could also be useful to notify the user about promotions, cool places around, etc. I would use this to inform users of trending places they are close to and coupons for certain areas when the user is in proximity.
