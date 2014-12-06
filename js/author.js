@@ -167,7 +167,40 @@ $('.color').click(function(){
 
 
 
+/* sliders */
+$('#sliding img:gt(0)').css({'left':'600px'});
 
+			function slide_horizontal() {
+				$('#sliding img:eq(1)').animate({'left':'0px'},1000);
 
+				$('#sliding img:eq(0)').animate({'left':'-500px'},1000, endOfAnimate);
 
+				function endOfAnimate() {
+					$('#sliding img:eq(0)')
+						.appendTo('#sliding')
+						.css({'left':'500px'});
 
+					setTimeout(slide_horizontal,4000); /*kepp the party going */
+				}
+
+			}
+			setTimeout(slide_horizontal,4000); /*start the party */
+
+/* slide 2*/
+$('#sliding2 img:gt(0)').css({'left':'600px'});
+
+		function slide_side() {
+				$('#sliding2 img:eq(1)').animate({'left':'0px'},1000);
+
+				$('#sliding2 img:eq(0)').animate({'left':'-500px'},1000, endAnimate);
+
+				function endAnimate() {
+					$('#sliding2 img:eq(0)')
+						.appendTo('#sliding2')
+						.css({'left':'500px'});
+
+					setTimeout(slide_side,4000); /*kepp the party going */
+				}
+
+			}
+			setTimeout(slide_side,4000); /*start the party */
