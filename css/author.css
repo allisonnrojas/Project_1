@@ -1,13 +1,13 @@
+@import url(_fonts/icomoon/style.css);
 body { background-color: black }
 #wrapper  { background-color: black; }
-#section1 { background-color: black;
+#section1 { background-color: black; 
 			margin-top: 50px; }
 #section2 { background-color: black; }
 #section3 { background-color: black; }
 #section4 { background-color: black; }
 
 /* headers, paragraphs, addy */
-
 
 h1 {text-align: center;}
 
@@ -16,7 +16,8 @@ h1 a {
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 	font-size: 20px;
 	margin:auto;
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
+	transition: all .5s;	
 }
 h1 a:hover { 
 	color: #7f7749;
@@ -39,17 +40,14 @@ p {
 	margin-top:20px;
 	margin-bottom: 50px; }
 
-p a { 	color: #9f965c;}
+p a { 	
+	color: #9f965c;
+	transition: all .5s;
+}
 p a:hover { 
 	color: #7f7749; ;
 	text-decoration: none; 
 }	
-.divider img { 
-	text-align: center;
-	width:100%;
-	margin:auto;
-
-}
 
 
 /* --- Glyph Icons --- */
@@ -66,18 +64,17 @@ p a:hover {
 
 }
 #carousel-example-generic { 
-	width: 100%; margin:auto;
+	width: 100%;
 }
-
 
 /* header/section/nav/footer */
 header { 	height: 130px; background: black; }
-nav { 		padding: 10px; background: black; }
+nav { 		padding: 10px; background: black; transition: all .5s; }
 
-section { 	
-			max-width:1000px; 
-			margin:auto;
-			padding-bottom:60px;	
+section { 			
+	max-width:1000px; 
+	margin:auto;
+	padding-bottom:60px;	
 }
 footer { 	height: 200px; margin-top: 40px; }
 
@@ -108,6 +105,9 @@ nav#footermenu a {
 	color: #d7d6ae;
 	font-size: 14px;
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+	letter-spacing: 1px;
+	transition: all .5s;
+
 }
 nav#footermenu a:hover { 
 	color: #9f965c;
@@ -132,10 +132,9 @@ span {
 	margin:auto;
 	text-align: center;
 }
-.sButtons {
-	margin:5px;
 
-}
+.sButtons { margin:5px; }
+
 footer p { 
 	text-align: center;
 	color:#807e80;
@@ -146,7 +145,7 @@ footer p {
 	line-height: 30px;
 	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif
 }
-#overlay { ; background-color: black; padding: 1px; }
+#overlay { background-color: black; padding: 1px; }
 
 #overlay .piece { 
 	width: 350px; 
@@ -182,6 +181,299 @@ footer p {
 }
 
 hr { width:80%; }
+
+
+/* ----------------------------- 
+			gallery
+ ------------------------------- */
+		#gallery {
+			padding: 25px;
+			text-align: center;
+		}
+
+		#gallery div {
+			display: inline-block;
+			width: 250px;
+			height: 150px;
+			overflow: hidden;
+
+			position: relative;
+		}
+
+		#gallery div img {
+			width: 250px;
+			height:150px;
+			padding:5px;
+
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+
+			margin: auto;
+		}
+
+		#dark {
+			display: none;
+			position: fixed;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			background-color: rgba(0,0,0,.7);
+		}
+		.light {
+			min-width:300px;
+			max-width: 700px;
+
+			min-height:330px;			
+			padding: 10px;
+			border:solid 1px black;
+			position: fixed;
+			left: 0px; right: 0px; top: 0px; bottom: 0px;
+			margin: auto;
+		}
+		.light a.close {
+			position: absolute;
+			right: 1px;
+			top: -12px;
+
+			background-color: black;
+			display: block;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			text-decoration: none;
+			font-size: 20px;
+			color: white;
+			font-weight: bold;
+		}
+
+		.light img {
+			width: 100%;
+			height: auto;
+			border:solid 10px black;
+		}
+
+		.light .icon {
+			font-size: 200px;
+			color: #fff;
+			
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+			height: 200px;
+
+			z-index: 11;
+			transition: all .1s;
+		}
+		.light:hover .icon { opacity: .1; }
+		.light .icon:hover { opacity: .4; }
+		.light .icon-arrow-left { left: -35px; }
+		.light .icon-arrow-right { right: -35px; }
+
+		#galleryLogo {
+			max-width:800px;
+			height:30px;
+			border:solid 1px red;
+			margin:auto;
+		}
+
+		/* ---gallery transition---- */
+
+		.svg-wrapper {
+		  margin: auto;
+		  height:65px;
+		  width: 330px; 
+		  margin-top: 20px;
+		  margin-bottom: 20px;
+		}
+		.shape {
+		  stroke-dasharray: 140 540;
+		  stroke-dashoffset: -470;
+		  stroke-width: 3px;
+		  fill: transparent;
+		  stroke: white;
+		  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+		}
+		.text {
+		  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+		  font-size: 22px;
+		  line-height: 32px;
+		  letter-spacing: 8px;
+		  color: white;
+		  top: -48px;
+		  text-align: center;
+		  position: relative;
+		 
+		}
+		.svg-wrapper:hover .shape {
+		  stroke-width: 2px;
+		  stroke-dashoffset: 0;
+		  stroke-dasharray: 760;
+		}
+
+
+/* ----------------------------- 
+			food menu
+ ------------------------------- */
+		section { 	
+			background-color:black;
+			max-width:1000px; 
+			margin:auto;
+			padding-bottom:20px;
+		}
+		.inset2 {
+			background-color: black;
+			min-width: 320px;
+			margin: auto;
+		}
+		.container2{ 
+			width:100%;
+			height:1280px;
+			background-color: black;
+			margin:auto;
+			display: inline-block;
+		}
+		.boxes { 
+			min-width:320px;
+			height:85px;
+			max-width: 500px;
+			margin:auto;
+			padding:5px;			
+		}
+		h1 { 
+			text-align: center;
+			line-height: 0px;
+			height:0px;
+			width:100%;
+			font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+			font-size: 18px;
+			color:#d7d6ae;
+			letter-spacing: 1px;
+		 }
+
+		.boxes p {	
+			text-align: center;
+			color:#999a98;
+			font-size: 13px;
+			font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+			font-size: 15px;
+		}
+	
+		.foodMenuBox { margin:auto; margin-top: 50px; }
+
+		.foodMenuBox img { margin:auto; }
+
+		/*sliders*/
+		#sliding {
+			border:solid 2px #b85f21  ;
+			width:480px;
+			min-width: 320px;
+			height: 270px;
+			margin: auto;
+			position: relative;
+			overflow: hidden;
+		}
+		#sliding img {
+			position: absolute;
+			width:480px;
+			height:270px;
+			margin: auto;
+			left: 0px;
+			top: 0px;
+		}
+
+		#sliding2, #sandwiches, #burgers {
+			border:solid 2px #b85f21 ;
+			width:480px;
+			min-width: 320px;
+			height: 270px;
+			margin: auto;
+			position: relative;
+			overflow: hidden;
+			min-width: 320px;
+		}
+		#sliding2 img, #sandwiches img, #burgers img {
+			position: absolute;
+			width:480px;
+			height:270px;
+			margin: auto;
+			left: 0px;
+			top: 0px;
+		}
+		h2 {
+			color: #be381b;
+			margin:auto;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			height:50px; 
+			letter-spacing: 1px;
+		}
+
+/* ----------------------------- 
+			drinks menu
+ ------------------------------- */
+.drinkMenuBox { margin:auto; margin-top: 50px; }
+
+.drinkMenuBox img { margin:auto; }
+
+.table-responsive { 
+	padding:20px;
+	width:65%;
+	margin:auto;
+	margin-bottom: 20px;
+}
+
+.names { 
+	color: #c4b981;
+	height:20px; 
+	letter-spacing: 1px;
+}
+
+.prices { 
+	float: right;
+	color: #78785c;
+}
+
+/* ----------------------------- 
+			events
+ ------------------------------- */
+.eventMenuBox { margin:auto; margin-top: 50px; }
+
+.eventMenuBox img { margin:auto; }
+
+#section5 { 			
+	max-width:1230px; 
+	margin:auto;
+	padding-bottom:60px;
+	padding-top: 50px;
+
+}
+
+.eventPics {
+	margin-bottom: 20px;
+}
+
+.event {
+	letter-spacing: 1px;
+	width:100%;
+	height:40px;
+	text-align: center;
+	color:#be381b;
+	font-size: 25px;
+	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+	margin:auto;
+	margin-top: 20px;
+
+}
+
+
+
+
 
 
 

@@ -114,7 +114,7 @@ function light_on() {
 		
 		$('#dark .light')
 			.stop(true)
-			.animate({'height':newHeight},900, function() {
+			.animate({'height':newHeight}, function() {
 				$('#dark .light img').animate({'opacity':'1'},500);
 			});
 
