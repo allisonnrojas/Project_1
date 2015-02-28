@@ -48,14 +48,11 @@ p a {
 }
 p a:hover { 
 	color:#444346; ;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
-.homeIcons { padding-left:45px; padding-right: 45px; }
+.homeIcons { width:45px; height:40px; }
 .homeIcons img { opacity:0.5; }
-.home { margin-left: 70px; }
-.venues,.bookings,.events { margin-left: 10px; 	
-}	
 
 .inset {
 	background-color: black;
@@ -202,14 +199,7 @@ section {
 	min-width: 320px;
 	margin: auto;
 }
-.container2{ 
-	width:100%;
-	height:800px;
-	background-color: black;
-	margin:auto;
-	display: inline-block;
-	border:solid 1px red;
-}
+
 .boxes { 
 	min-width:320px;
 	height:85px;
@@ -267,6 +257,7 @@ section {
 	left: 0px;
 	top: 0px;
 }
+#venue {margin-top: 80px; }
 
 
 /* ----------------------------- 
@@ -386,6 +377,8 @@ label { color:#2c62f5; }
 .light .icon:hover { opacity: .4; }
 .light .icon-arrow-left { left: -35px; }
 .light .icon-arrow-right { right: -35px; }
+
+span { padding:10px; }
 
 
 
