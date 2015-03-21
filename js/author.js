@@ -204,3 +204,50 @@ $('#sliding2 img:gt(0)').css({'left':'600px'});
 
 			}
 			setTimeout(slide_side,4000); /*start the party */
+
+
+/* --------- Camera Plugin --------------
+	--------------------------------------*/
+$( document ).bind( 'deviceready', function() {
+
+	$( '#btnCamera' ).bind( 'touchstart',function() {
+		navigator.camera.getPicture( function( data ) {
+			$( '.capture' )
+				.attr( 'src', 'data:image/jpeg;base64,' + data )
+				.css( 'visibility', 'visible' );
+		}, function( error ) {
+			console.log('Error');
+		}, {
+			destinationType: Camera.DestinationType.DATA_URL,
+			sourceType: Camera.PictureSourceType.CAMERA,
+			allowEdit: false,
+			targetWidth: 135,
+			targetHeight: 200
+		});
+	});
+
+	$( '#btnGallery' ).bind( 'touchStart',function() {
+		navigator.camera.getPicture( function( data ) {
+			$( '.capture' )
+			.attr( 'src', 'data:image/jpeg;base64,'+ data )
+			.css( 'visibility', 'visible' );
+		}, function( error ) {
+			console.log( 'Error' );
+		}, {
+			destinationType: Camera.DestinationType.DATA_URL,
+			sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+			allowEdit: false,
+			targetWidth: 135,
+			targetHeight: 200,
+			mediaType: Camera.mediaType.PICTURE
+		});
+	});
+
+	$( '.capture' ).load( function() {
+		$( this )
+			.css( 'left', Math.round( ( $( '.panel').outerWidth() - $( this ).outerWidth() ) /
+			.css( 'top', Math.round(( 270 - $( this ).outerHeight() ) / 2 ) + 'px' );
+
+	});
+});
+

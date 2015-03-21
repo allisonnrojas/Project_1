@@ -9,7 +9,7 @@ body { background-color:black }
 h1 {text-align: center;}
 
 h1 a { 
-	color:#7e7f7f;
+	color:white;
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 	font-size:20px;
 	margin:auto;
@@ -25,8 +25,8 @@ h2 {
 	height:40px;
 	text-align: center;
 	text-transform: uppercase;
-	color:#2b48a0;
-	font-size:32px;
+	color:white;
+	font-size:30px;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin:auto;
 }
@@ -117,6 +117,7 @@ nav img {
 	margin:auto;
 	padding-top: 5px
 }
+nav#footermenu 
 span { 
 	padding:0px;
 	display: inline-block;
@@ -164,7 +165,8 @@ footer p {
 }
 
 /* B&W */
-.bw {padding:40px;}
+.bw { margin:auto; }
+.bw img { margin:auto; }
 
 .bw {
   -webkit-transition: all 1s ease;
@@ -179,8 +181,9 @@ footer p {
   -webkit-filter: grayscale(100%);
 }
 
-.socialIcons { margin-left:26%; padding-top: 25px; }
-.button { margin:10px; }
+.socialBox { width:136px; margin:auto; padding-top: 40px; }
+.button { margin:auto; }
+
 
 hr { width:90%; margin-top: 40px; }
 
@@ -260,6 +263,10 @@ section {
 #venue {margin-top: 80px; }
 
 
+/* Camera Plugin */
+
+
+
 /* ----------------------------- 
 			bookings
  ------------------------------- */
@@ -288,6 +295,9 @@ h3 { text-align: center; color:#929493; }
 .rows { margin-top: 20px; }
 
 label { color:#2c62f5; }
+
+/* camera plugin */
+#btnCamera { margin:auto }
 
 
 
