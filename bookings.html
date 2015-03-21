@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>http://www.thepulse.com/bookings</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/author.css">
+	
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="inset">
+					<div id="logoContainer"><img src="img/logo.png"></div>
+				</div>
+			</header>
+			<nav id="footermenu">
+					<a href="index.html"><img class="homeIcons"src="img/home.png">home</a>
+					<a href="venues.html"><img class="homeIcons"src="img/venues.png">venues</a>
+					<a href="bookings.html"><img class="homeIcons"src="img/bookings.png">bookings</a>
+					<a href="events.html"><img class="homeIcons"src="img/events.png">events</a>
+			</nav>
+			<div class="bookingsBox">
+				<img class="img-responsive" src="img/bookingss.png">
+			</div>	
+				<section id="section1">
+					<div class="container-fluid">
+						<h3> Call us to book! </h3>
+						  <hr>
+						<h3>1800.259.4501</h3>
+							<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+								<div class="rows">
+									<label for="name">Your name:</label><br />
+									<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+								</div>
+								<div class="rows">
+									<label for="email">Your email:</label><br />
+									<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+								</div>
+								<div class="rows">
+									<label for="message">Your message:</label><br />
+									<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+								</div>
+								<input id="submit_button" type="submit" value="Send email" />
+							</form>						
+						<h1>
+							<a href="gallery.html">..: View The Pulse gallery :..</a>
+						</h1>
+						<div id="btnCamera">
+						    <button class="touchStart" onclick="capture();">Capture Photo</button>	
+						    <div style="text-align:center;margin:20px;">
+						        <img class="capture" src="" style="width:auto;height:120px;"></img>
+						    </div>
+						</div>
+					</div>
+				</section>							
+			<footer>
+				<div class="socialIcons">
+					<div class="socialBox">
+						<a href="http://www.twitter.com"><img class="button" src="img/twitter.png" height="42" width="42"></a>
+						<a href="http://www.facebook.com"><img class="button" src="img/facebook.png" height="42" width="42"></a>
+						<a href="http://www.instagram.com"><img class="button" src="img/instagram.png" height="42" width="42"></a>
+					</div>
+				</div>
+			  	<p>&copy;THEPULSE.COM 2013-2014. <span>|</span> ALL RIGHTS RESERVED. THEPULSE.COM</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="js/author.js"></script>
+	</body>
+</html>

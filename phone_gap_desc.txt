@@ -1,0 +1,38 @@
+﻿Allison Rojas
+
+
+Cordova Camera Plugin:
+
+
+The camera.getPicture function opens the device's default camera app that lets users to take pictures. This occurs by default, when Camera.sourceType equals Camera.PictureSourceType.CAMERA. Once the user takes a photo, the camera app closes and then is restored.
+If Camera.sourceType is Camera.PictureSourceType.PHOTOLIBRARY or Camera.PictureSourceType.SAVEDPHOTOALBUM, then a dialog displays that allows users to select an existing image. The camera.getPicture function returns aCameraPopoverHandle object, which can be used to move the image selection dialog, say when the device orientation changes.
+This plugin will be used so users can capture their own photos in the locations they are in and be able to share them with social medias.
+
+
+navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+   destinationType: Camera.DestinationType.DATA_URL
+});
+
+function onSuccess(imageData) {
+   var image = document.getElementById('myImage');
+   image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+   alert('Failed because: ' + message);
+}
+
+
+
+Take a photo and retrieve the image's file location:
+navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+   destinationType: Camera.DestinationType.FILE_URI });
+
+function onSuccess(imageURI) {
+   var image = document.getElementById('myImage');
+   image.src = imageURI;
+}
+
+function onFail(message) {
+   alert('Failed because: ' + message);
+}

@@ -1,0 +1,45 @@
+.view {
+   width: 408px;
+   height: 102px;
+   margin: 10px;
+   display: inline-block;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+   margin-top:40px;
+}
+.view .mask,.view .content {
+   width: 408px;
+   height: 102px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 10;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+   color: white;
+   text-align: center;
+   position: relative;
+   font-size: 20px;
+   padding: 8px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 5px 0 0 0;
+}
+.view p {
+   font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+   font-size: 12px;
+   position: relative;
+   color: black;
+   padding: 10px 10px 10px;
+   text-align: center;
+}
+
+.main { margin:auto; }
+

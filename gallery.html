@@ -4,138 +4,6 @@
 		<title>http://www.thepub.com/gallery</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/author.css">
-		<style>
-		@import url(_fonts/icomoon/style.css);
-
-		#gallery {
-			padding: 25px;
-			text-align: center;
-		}
-
-		#gallery div {
-			display: inline-block;
-			width: 250px;
-			height: 150px;
-			overflow: hidden;
-
-			position: relative;
-		}
-
-		#gallery div img {
-			width: 250px;
-			height:150px;
-			padding:5px;
-
-			position: absolute;
-			left: 0px;
-			right: 0px;
-			top: 0px;
-			bottom: 0px;
-
-			margin: auto;
-		}
-
-		#dark {
-			display: none;
-			position: fixed;
-			left: 0px;
-			right: 0px;
-			top: 0px;
-			bottom: 0px;
-			background-color: rgba(0,0,0,.7);
-		}
-		.light {
-			background-color: black;
-			min-width:300px;
-			height: 281px;
-			padding: 10px;
-
-			position: fixed;
-			left: 0px; right: 0px; top: 0px; bottom: 0px;
-			margin: auto;
-		}
-		.light a.close {
-			position: absolute;
-			right: 1px;
-			top: -12px;
-
-			background-color: black;
-			display: block;
-			width: 20px;
-			height: 20px;
-			text-align: center;
-			line-height: 20px;
-			text-decoration: none;
-			font-size: 20px;
-			color: white;
-			font-weight: bold;
-		}
-		.light img {
-			width: 100%;
-			height: auto;
-		}
-
-		.light .icon {
-			font-size: 200px;
-			color: #fff;
-			
-			position: absolute;
-			top: 0px;
-			bottom: 0px;
-			margin: auto;
-			height: 200px;
-
-			z-index: 11;
-			opacity: 1;
-			transition: all .1s;
-		}
-		.light:hover .icon { opacity: .1; }
-		.light .icon:hover { opacity: .4; }
-		.light .icon-arrow-left { left: -35px; }
-		.light .icon-arrow-right { right: -35px; }
-
-		#galleryLogo {
-			max-width:800px;
-			height:30px;
-			border:solid 1px red;
-			margin:auto;
-		}
-
-		/* ---gallery transition---- */
-
-		.svg-wrapper {
-		  margin: auto;
-		  height:65px;
-		  width: 330px; 
-		  margin-top: 20px;
-		  margin-bottom: 20px;
-		}
-		.shape {
-		  stroke-dasharray: 140 540;
-		  stroke-dashoffset: -470;
-		  stroke-width: 3px;
-		  fill: transparent;
-		  stroke: white;
-		  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-		}
-		.text {
-		  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
-		  font-size: 22px;
-		  line-height: 32px;
-		  letter-spacing: 8px;
-		  color: #d7d6ae;
-		  top: -48px;
-		  text-align: center;
-		  position: relative;
-		 
-		}
-		.svg-wrapper:hover .shape {
-		  stroke-width: 2px;
-		  stroke-dashoffset: 0;
-		  stroke-dasharray: 760;
-		}
-
-		</style>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -144,39 +12,27 @@
 					<div id="logoContainer"><img src="img/logo.png"></div>
 				</div>
 			</header>
-
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<nav id="footermenu">
-					<a href="index.html">home</a>
-					<a href="food.html">food</a>
-					<a href="drinks.html">drinks</a>
-					<a href="events.html">events</a>
-				</nav>	
-				
-				<div class="svg-wrapper">
-					<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-						<rect class="shape" height="60" width="320" />
-						   <div class="text">GALLERY</div>
-				    </svg>
-				</div>
+			<nav id="footermenu">
+					<a href="index.html"><img class="homeIcons"src="img/home.png">home</a>
+					<a href="venues.html"><img class="homeIcons"src="img/venues.png">venues</a>
+					<a href="bookings.html"><img class="homeIcons"src="img/bookings.png">bookings</a>
+					<a href="events.html"><img class="homeIcons"src="img/events.png">events</a>
+			</nav>
 			<hr>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-6 col-md-8 col-lg-12">
 						<div id="gallery">
+						  <p>click to enlarge</p>
 							<div><img class="img-responsive"src="img/gallery/gal1.jpg"></div>
 							<div><img class="img-responsive"src="img/gallery/gal2.jpg"></div>
 							<div><img class="img-responsive"src="img/gallery/gal3.jpg"></div>
 							<div><img class="img-responsive"src="img/gallery/gal4.jpg"></div>
 							<div><img class="img-responsive"src="img/gallery/gal5.jpg"></div>
 							<div><img class="img-responsive"src="img/gallery/gal6.jpg"></div>
-							<div><img class="img-responsive"src="img/gallery/gal7.jpg"></div>
-							<div><img class="img-responsive"src="img/gallery/gal8.jpg"></div>
-							<div><img class="img-responsive"src="img/gallery/gal9.jpg"></div>
-							<div><img class="img-responsive"src="img/gallery/gal10.jpg"></div>
-							<div><img class="img-responsive"src="img/gallery/gal11.jpg"></div>
-							<div><img class="img-responsive"src="img/gallery/gal12.jpg"></div>	
 						</div>
+						<p><a href="gallery.html">pg 1</a> <span>|</span>
+						<a href="gallery2.html">pg 2</a> <span>|</span></p>
 					</div>
 				</div>
 			</div>
@@ -194,15 +50,14 @@
 					</dark>
 				</div>
 			<footer>
-				<div id="socialContainer">
-					<a href="http://www.facebook.com/YOURFACEBOOKPAGE"><img class="sButtons" style="border: 0pt none ;" title="Become a friend" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/FACEBOOKBUTTONgrey_zps1cd309d6.png" width="25" height="25" /></a>
-						
-					<a href="http://www.twitter.com"><img class="sButtons" style="border: 0pt none ;" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/TWITTERBUTTONgrey_zps48ffe683.png" width="25" height="25" /></a>
-						
-					<a href="YOUR GOOGLE+ URL"><img class="sButtons" style="border: 0pt none ;" title="Become a friend" alt="" src=" http://i788.photobucket.com/albums/yy162/donnasimone/GOOGLEgrey_zps04dda09a.png" width="25" height="25" /></a>
+				<div class="socialIcons">
+					<div class="socialBox">
+						<a href="http://www.twitter.com"><img class="button" src="img/twitter.png" height="42" width="42"></a>
+						<a href="http://www.facebook.com"><img class="button" src="img/facebook.png" height="42" width="42"></a>
+						<a href="http://www.instagram.com"><img class="button" src="img/instagram.png" height="42" width="42"></a>
+					</div>
 				</div>
-				<p>&copy; THEPUB.COM 2013-2014. <span>|</span> ALL RIGHTS RESERVED. THEPUB.COM</p>
-			</div>
+			  	<p>&copy;THEPULSE.COM 2014-2015. <span>|</span> ALL RIGHTS RESERVED. WWW.THEPULSE.COM</p>
 			</footer>
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
